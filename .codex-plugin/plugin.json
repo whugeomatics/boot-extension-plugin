@@ -1,0 +1,15 @@
+{
+  "name": "boot-extension",
+  "version": "1.0.0",
+  "description": "boot-extension plugin description.",
+  "author": {
+    "name": "whugeomatics",
+    "url": "https://github.com/whugeomatics"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "executor",
+    "commit"
+  ],
+  "skills": "./skills/"
+}

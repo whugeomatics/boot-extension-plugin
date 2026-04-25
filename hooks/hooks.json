@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash .claude/hooks/command-guard.sh",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/command-guard.sh",
             "statusMessage": "Checking command safety..."
           }
         ]
@@ -18,12 +18,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash .claude/hooks/java-lint.sh",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/java-lint.sh",
             "statusMessage": "Running Java lint check..."
           },
           {
             "type": "command",
-            "command": "bash .claude/hooks/secret-scan.sh",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/secret-scan.sh",
             "statusMessage": "Scanning for secrets..."
           }
         ]
@@ -34,15 +34,10 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash .claude/hooks/session-summary.sh"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/session-summary.sh"
           }
         ]
       }
     ]
-  },
-  "enabledPlugins": {
-    "context7@claude-plugins-official": true,
-    "code-review@claude-plugins-official": true,
-    "harness-plugin@whugeomatics": true
   }
 }
