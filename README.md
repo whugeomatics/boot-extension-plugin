@@ -48,11 +48,11 @@ Codex plugin manifest，用于在 Codex 中复用通用 skills。
 ### Claude Code 开发环境安装
 
 ```bash
-# 克隆插件仓库
-git clone https://github.com/whugeomatics/boot-extension-plugin.git
+# 添加市场
+/plugin marketplace add https://github.com/whugeomatics/boot-extension-plugin.git
 
-# 将插件复制到 Claude Code 插件目录
-cp -r boot-extension-plugin ~/.claude/plugins/
+# 安装插件（默认安装到用户范围）
+/plugin install boot-extension@whugeomatics
 ```
 
 ### Codex 开发环境安装
